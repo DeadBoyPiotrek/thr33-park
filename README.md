@@ -1,3 +1,12 @@
+## thr33 park snowpark project
+
+![snowflake logog](https://user-images.githubusercontent.com/87661735/165913377-3b9acb0f-9cda-4c54-9631-bd2f9713370d.svg)
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
