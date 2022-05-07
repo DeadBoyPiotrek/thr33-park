@@ -23,7 +23,7 @@ function Controls() {
   return (
     <OrbitControls
       //   minPolarAngle={angleToRadians(0)}
-      //   maxPolarAngle={angleToRadians(360)}
+      maxPolarAngle={angleToRadians(80)}
       ref={orbitControlsRef}
     />
   );
