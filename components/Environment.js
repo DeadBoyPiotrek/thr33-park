@@ -7,7 +7,7 @@ function Environment2() {
       <mesh>
         <sphereGeometry args={[50, 100, 100]} />
 
-        <meshBasicMaterial side={THREE.BackSide} color="#ec87f0" />
+        <meshBasicMaterial side={THREE.BackSide} color="#000000" />
       </mesh>
     </Environment>
   );

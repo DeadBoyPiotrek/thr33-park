@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -11,12 +11,13 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@react-three/drei": "^9.7.1",
-    "@react-three/fiber": "^8.0.13",
+    "@react-three/drei": "^9.11.0",
+    "@react-three/fiber": "^8.0.18",
+    "leva": "^0.9.27",
     "next": "^12.1.6",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "three": "^0.140.0"
+    "three": "^0.140.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
