@@ -1,28 +1,26 @@
 import { OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { angleToRadians } from '../utils/helpers';
 function Controls() {
-  const orbitControlsRef = useRef(null);
+  const orbitControlsRef = useRef();
   useFrame(state => {
     if (orbitControlsRef.current) {
-      const { x, y } = state.mouse;
-      orbitControlsRef.current.setAzimuthalAngle(x * -angleToRadians(100));
-      orbitControlsRef.current.setPolarAngle((y + 1) * angleToRadians(90 - 30));
-      //   console.log('set:', (y + 4) * angleToRadians(90 - 30));
-      //   console.log('get:', orbitControlsRef.current.getPolarAngle());
+      const { x } = state.mouse;
+      orbitControlsRef.current.setAzimuthalAngle(x * angleToRadians(30));
+      //TODO set the polar angle on the y axis movement
+      //TODO make x axis movement more smooth
       orbitControlsRef.current.update();
     }
   });
 
-  useEffect(() => {
-    if (orbitControlsRef.current) {
-      console.log(orbitControlsRef.current);
-    }
-  }, [orbitControlsRef]);
   return (
     <OrbitControls
-      //   minPolarAngle={angleToRadians(0)}
+      target={[0, 1.5, 0]}
+      enableZoom={false}
+      enablePan={false}
+      enableRotate={false}
+      minPolarAngle={angleToRadians(50)}
       maxPolarAngle={angleToRadians(80)}
       ref={orbitControlsRef}
     />

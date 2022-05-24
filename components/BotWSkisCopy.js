@@ -12,8 +12,8 @@ export default function Model({ ...props }) {
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
-    // actions['backflip'].play();
-    // actions['rotation'].play();
+    actions['backflip'].play();
+    actions['rotation'].play();
   }, [actions]);
 
   return (
