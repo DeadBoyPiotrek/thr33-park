@@ -11,15 +11,15 @@ function SpotlightTargeted({ vec = new Vector3(), ...props }) {
   });
   return (
     <SpotLight
-      color={'#ffffff'}
+      color={'#6288ee'}
       castShadow
       ref={light}
-      penumbra={1}
+      penumbra={10}
       distance={7}
-      angle={0.35}
+      angle={0.6}
       attenuation={5}
       anglePower={4}
-      intensity={20}
+      intensity={0.1}
       {...props}
     />
   );

@@ -1,7 +1,7 @@
 import { OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import React, { useRef } from 'react';
-import { angleToRadians } from '../utils/helpers';
+import { angleToRadians } from '../../utils/helpers';
 function Controls() {
   const orbitControlsRef = useRef();
   useFrame(state => {

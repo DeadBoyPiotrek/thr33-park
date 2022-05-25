@@ -1,0 +1,17 @@
+.nav {
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-transform: uppercase;
+
+  &__list {
+    list-style: none;
+    margin: 30px 30px;
+    padding: 0;
+  }
+}
