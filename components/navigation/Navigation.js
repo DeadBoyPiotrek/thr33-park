@@ -6,19 +6,19 @@ function Navigation() {
     <>
       <div className={styles.nav}>
         <ul className={styles.nav__list}>
-          <li className={styles.nav__features}>
+          <li className={styles.nav__item}>
             <Link href="/features">
-              <a className={styles.features}>features</a>
+              <a className={styles.nav__link}>features</a>
             </Link>
           </li>
-          <li className={styles.nav__snowpark}>
+          <li className={styles.nav__item}>
             <Link className={styles.features} href="/snowpark">
-              <a className={styles.features}>snowpark</a>
+              <a className={styles.nav__link}>snowpark</a>
             </Link>
           </li>
-          <li className={styles.nav__aboutUs}>
+          <li className={styles.nav__item}>
             <Link href="/about-us">
-              <a className={styles.features}>about us</a>
+              <a className={styles.nav__link}>about us</a>
             </Link>
           </li>
         </ul>
