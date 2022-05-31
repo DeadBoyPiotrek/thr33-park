@@ -7,13 +7,13 @@ function Navigation() {
       <div className={styles.nav}>
         <ul className={styles.nav__list}>
           <li className={styles.nav__item}>
-            <Link href="/features">
-              <a className={styles.nav__link}>features</a>
+            <Link className={styles.features} href="/snowpark">
+              <a className={styles.nav__link}>snowpark</a>
             </Link>
           </li>
           <li className={styles.nav__item}>
-            <Link className={styles.features} href="/snowpark">
-              <a className={styles.nav__link}>snowpark</a>
+            <Link href="/features">
+              <a className={styles.nav__link}>features</a>
             </Link>
           </li>
           <li className={styles.nav__item}>

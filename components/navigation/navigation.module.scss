@@ -1,3 +1,6 @@
+// import variables from styles/variables.scss
+@import '../../styles/variables.scss';
+
 .nav {
   z-index: 1;
   font-size: 1.5rem;
@@ -8,6 +11,9 @@
   color: white;
   text-transform: uppercase;
 
+  &__item {
+    margin: 10px 0;
+  }
   &__list {
     list-style: none;
     margin: 50px 0 0 50px;
@@ -15,7 +21,7 @@
   }
   &__link {
     position: relative;
-    color: #ffffff;
+    color: $white;
   }
 
   &__link:after {
@@ -26,7 +32,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: $white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }

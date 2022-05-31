@@ -7,11 +7,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Navigation />
+      {/* <div className={styles.scene}> */}
       <Suspense fallback={null}>
         <Canvas className={styles.container__canvas}>
           <Scene />
         </Canvas>
       </Suspense>
+      {/* </div> */}
     </div>
   );
 }
