@@ -1,0 +1,32 @@
+// .featurePreview {
+//   &__image {
+//     img {
+//       transition: all 0.2s ease-in-out;
+//       &:hover {
+//         transform: scale(1.1);
+//       }
+//     }
+//   }
+//   &__name {
+//     text-align: center;
+//     padding: 20px;
+//     font-size: large;
+//   }
+// }
+.featurePreview {
+  img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    img {
+      transform: scale(1);
+    }
+  }
+
+  &__name {
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+  }
+}

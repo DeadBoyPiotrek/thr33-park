@@ -9,7 +9,7 @@ export default function Home() {
       <Navigation />
       {/* <div className={styles.scene}> */}
       <Suspense fallback={null}>
-        <Canvas className={styles.container__canvas}>
+        <Canvas shadows>
           <Scene />
         </Canvas>
       </Suspense>
