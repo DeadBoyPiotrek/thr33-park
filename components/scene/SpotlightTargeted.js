@@ -15,8 +15,8 @@ function SpotlightTargeted({ vec = new Vector3(), ...props }) {
       castShadow
       ref={light}
       penumbra={10}
-      distance={7}
-      angle={0.6}
+      distance={17}
+      angle={3}
       attenuation={5}
       anglePower={4}
       intensity={0.1}
