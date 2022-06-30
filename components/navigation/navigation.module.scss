@@ -1,5 +1,5 @@
 // import variables from styles/variables.scss
-@import '../../styles/variables.scss';
+@import '../../styles/common.scss';
 
 .nav {
   z-index: 1;
@@ -12,57 +12,27 @@
   color: white;
   text-transform: uppercase;
   font-weight: 600;
-  &__item {
-  }
+
   &__list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    gap: 100px;
     justify-content: center;
     align-items: flex-end;
   }
 
-  &__link {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: relative;
-    color: $white;
-    img {
-      padding: 0;
-      margin: 0;
+  @include phone-media-query {
+    // display: none;
+    &__links {
+      display: none;
     }
   }
-
-  //first item
-
-  &__link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0px;
-    left: 0;
-    background-color: $white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  &__link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-  &__list:first-child {
-    ::after {
-      content: '';
+  @include tablet-media-query {
+    &__list {
+      gap: 20px;
     }
-  }
-  &__logo::after {
-    bottom: -2.5px;
   }
 }

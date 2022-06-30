@@ -18,4 +18,4 @@
 
 ###### scss
 
-[live demo](https://vercel.com/thr33-park)
+[live demo](http://thr33-park.vercel.app/)

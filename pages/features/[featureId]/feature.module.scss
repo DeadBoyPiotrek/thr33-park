@@ -6,4 +6,10 @@
   position: absolute;
   overflow: hidden;
   background: $black;
+
+  cursor: grab;
+
+  :active {
+    cursor: grabbing;
+  }
 }

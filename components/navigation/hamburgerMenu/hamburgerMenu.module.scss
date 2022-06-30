@@ -1,0 +1,11 @@
+@import '../../../styles/common.scss';
+.hamburgerMenu {
+  display: none;
+  @include phone-media-query {
+    display: block;
+    display: flex;
+  }
+  &__open {
+    color: red;
+  }
+}
