@@ -9,3 +9,13 @@
     color: red;
   }
 }
+
+.hamburgerMenuOpen {
+  position: absolute;
+  color: red;
+}
+.hamburgerMenuClose {
+  position: absolute;
+  // display: none;
+  color: blue;
+}
