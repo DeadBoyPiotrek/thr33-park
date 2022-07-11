@@ -18,21 +18,40 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
     gap: 100px;
     justify-content: center;
     align-items: flex-end;
   }
 
+  &__linkList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  //tablet-media-query
+  @include tablet-media-query {
+    &__list {
+      gap: 20px;
+    }
+    &__linkList {
+      gap: 20px;
+    }
+  }
+  //tablet-media-query
+  //phone-media-query
   @include phone-media-query {
     // display: none;
     &__links {
       display: none;
     }
-  }
-  @include tablet-media-query {
-    &__list {
-      gap: 20px;
+    &__linkList {
+      display: none;
     }
   }
+  //phone-media-query
 }

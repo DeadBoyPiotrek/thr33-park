@@ -1,21 +1,33 @@
 @import '../../../styles/common.scss';
 .hamburgerMenu {
+  cursor: pointer;
   display: none;
   @include phone-media-query {
     display: block;
     display: flex;
   }
-  &__open {
-    color: red;
-  }
 }
 
 .hamburgerMenuOpen {
+  background: black;
+  padding: 0;
   position: absolute;
-  color: red;
+  width: 100%;
+  top: 300%;
+  left: 0;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  list-style: none;
 }
 .hamburgerMenuClose {
-  position: absolute;
-  // display: none;
-  color: blue;
+  display: none;
+
+  // tablet-media-query
+  @include tablet-media-query {
+  }
+  // tablet-media-query
+  // phone-media-query
+  @include phone-media-query {
+  }
+  // phone-media-query
 }

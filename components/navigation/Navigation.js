@@ -8,8 +8,10 @@ function Navigation() {
       <div className={styles.nav}>
         <ul className={styles.nav__list}>
           <NavigationLogo />
-          <NavigationLinks />
-          {/* <HamburgerMenu /> */}
+          <ul className={styles.nav__linkList}>
+            <NavigationLinks />
+          </ul>
+          <HamburgerMenu />
         </ul>
       </div>
     </>

@@ -12,15 +12,15 @@ const HamburgerMenu = () => {
     <>
       <div className={styles.hamburgerMenu} onClick={openNavHandler}>
         <AiOutlineMenu size="2em" />
-      </div>
 
-      <ul
-        className={
-          isOpen ? styles.hamburgerMenuOpen : styles.hamburgerMenuClose
-        }
-      >
-        <NavigationLinks />
-      </ul>
+        <ul
+          className={
+            isOpen ? styles.hamburgerMenuOpen : styles.hamburgerMenuClose
+          }
+        >
+          <NavigationLinks />
+        </ul>
+      </div>
     </>
   );
 };
