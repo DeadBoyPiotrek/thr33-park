@@ -15,6 +15,7 @@
     "@react-three/fiber": "^8.0.18",
     "@react-three/postprocessing": "^2.3.2",
     "canvas-sketch-util": "^1.10.0",
+    "dotenv": "^16.0.1",
     "lamina": "^1.1.20",
     "leva": "^0.9.27",
     "next": "^12.1.6",

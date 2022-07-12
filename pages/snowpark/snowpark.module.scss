@@ -1,7 +1,11 @@
+@import '../../styles/variables.scss';
 .wrapper {
-  background: black;
+  background-image: url('/images/SVG/bgSnowpark.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   min-height: 100%;
   color: white;
+  padding-top: 100px;
 }
