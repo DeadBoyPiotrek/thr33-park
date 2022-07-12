@@ -9,25 +9,23 @@
 }
 
 .hamburgerMenuOpen {
-  background: black;
+  z-index: 1;
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   padding: 0;
   position: absolute;
   width: 100%;
-  top: 300%;
+  top: 200%;
   left: 0;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   list-style: none;
+  li {
+    text-align: center;
+    padding: 5px;
+  }
 }
 .hamburgerMenuClose {
+  z-index: 100;
+  background: red;
   display: none;
-
-  // tablet-media-query
-  @include tablet-media-query {
-  }
-  // tablet-media-query
-  // phone-media-query
-  @include phone-media-query {
-  }
-  // phone-media-query
 }

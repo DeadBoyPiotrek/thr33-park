@@ -1,7 +1,7 @@
 import React from 'react';
-
-function AboutUs() {
-  return <div>AboutUs in progress...</div>;
+import styles from './aboutUs.module.scss';
+function aboutUs() {
+  return <div className={styles.wrapper}>About Us in progress...</div>;
 }
 
-export default AboutUs;
+export default aboutUs;
