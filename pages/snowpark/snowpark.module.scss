@@ -9,3 +9,23 @@
   color: white;
   padding-top: 100px;
 }
+
+.snowpark {
+  width: 80%;
+  margin: 7rem auto;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  &__section {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    background: $darkBlue;
+  }
+}
