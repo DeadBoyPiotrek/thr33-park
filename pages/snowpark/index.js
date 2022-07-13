@@ -17,7 +17,7 @@ function Snowpark({ weather }) {
   return (
     <>
       <div className={styles.wrapper}>
-        {/* {JSON.stringify(weather)} */}
+        {JSON.stringify(weather)}
         <div>Pogoda na stoku</div>
         <div></div>
       </div>
