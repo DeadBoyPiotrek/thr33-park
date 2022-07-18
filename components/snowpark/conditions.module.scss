@@ -1,15 +1,6 @@
 @import '../../styles/variables.scss';
-.wrapper {
-  background-image: url('/images/SVG/bgSnowpark.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  color: white;
-  padding-top: 100px;
-}
-.snowpark {
+
+.main {
   width: 80%;
   margin: 1rem auto;
 }
@@ -18,7 +9,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 100%;
 }
 .weather {
@@ -27,8 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  // justify-content: center;
-  // gap: 50px;
   width: 80%;
   border-radius: 30px;
   padding: 30px;

@@ -1,0 +1,22 @@
+// import variables from styles/variables.scss
+@import '../../styles/variables.scss';
+
+.wrapper {
+  background-image: url('/images/SVG/bgFeatures.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+
+.features {
+  width: 80%;
+  margin: 7rem auto;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.main {
+  width: 80%;
+  margin: 1rem auto;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}

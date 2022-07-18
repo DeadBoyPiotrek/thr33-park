@@ -5,15 +5,14 @@ import Scene from '../components/scene/Scene';
 import styles from './index.module.scss';
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <Navigation />
-      {/* <div className={styles.scene}> */}
+
       <Suspense fallback={null}>
         <Canvas shadows>
           <Scene />
         </Canvas>
       </Suspense>
-      {/* </div> */}
-    </div>
+    </main>
   );
 }
