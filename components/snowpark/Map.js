@@ -1,17 +1,17 @@
 import { GoogleMap, MarkerF, useLoadScript } from '@react-google-maps/api';
 import { useMemo } from 'react';
-const lat = +process.env.NEXT_PUBLIC_LATITUDE;
-const lng = +process.env.NEXT_PUBLIC_LONGITUDE;
+
 const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-const Map = () => {
+const Map = ({ weather }) => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: apiKey,
   });
   if (!isLoaded) return <div>Loading map...</div>;
-  return <Map2 />;
+  return <Map2 weather={weather} />;
 };
 
-const Map2 = () => {
+const Map2 = ({ weather }) => {
+  const { lat, lon: lng } = weather;
   const center = useMemo(() => ({ lat, lng }), []);
   return (
     <GoogleMap
@@ -22,7 +22,7 @@ const Map2 = () => {
       zoom={15}
       center={center}
     >
-      <MarkerF position={{ lat, lng }} />
+      <MarkerF position={center} />
     </GoogleMap>
   );
 };

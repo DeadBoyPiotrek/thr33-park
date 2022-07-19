@@ -7,7 +7,7 @@ function Snowpark({ weather }) {
     <div className={styles.main}>
       <section className={styles.section}>
         <h2>Jak do nas dojechać ?</h2>
-        <Map />
+        <Map weather={weather} />
       </section>
       <section className={styles.section}>
         <h2>Warunki na stoku</h2>

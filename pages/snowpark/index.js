@@ -1,9 +1,8 @@
 import Snowpark from '../../components/snowpark/Snowpark';
-import { getCurrentWeather } from '../../lib/weatherFunctions';
+import { getWeatherAndForecast } from '../../lib/weatherFunctions';
 import styles from './snowparkPage.module.scss';
 export const getStaticProps = async () => {
-  // const forecast = await get5DaysForecast();
-  const weather = await getCurrentWeather();
+  const weather = await getWeatherAndForecast();
 
   return {
     props: {
@@ -17,6 +16,7 @@ const SnowparkPage = ({ weather }) => {
   return (
     <>
       <main className={styles.wrapper}>
+        <pre>{JSON.stringify(weather, null, 2)}</pre>
         <Snowpark weather={weather} />
       </main>
     </>

@@ -3,5 +3,7 @@
   "globals": {
     "React": "readonly"
   },
-  "rules": {}
+  "rules": {
+    "react-hooks/exhaustive-deps": "warn"
+  }
 }
