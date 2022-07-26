@@ -12,7 +12,9 @@ const Map = ({ weather }) => {
 
 const Map2 = ({ weather }) => {
   const { lat, lon: lng } = weather;
-  const center = useMemo(() => ({ lat, lng }), []);
+
+  //TODO change to empty array disable elsint rule
+  const center = useMemo(() => ({ lat, lng }), [lat, lng]);
   return (
     <GoogleMap
       mapContainerStyle={{
@@ -21,6 +23,7 @@ const Map2 = ({ weather }) => {
       }}
       zoom={15}
       center={center}
+      options={{ scrollwheel: false }}
     >
       <MarkerF position={center} />
     </GoogleMap>

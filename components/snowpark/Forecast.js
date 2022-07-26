@@ -1,19 +1,25 @@
 import Image from 'next/image';
 import React from 'react';
+import styled from 'styled-components';
 import styles from './forecast.module.scss';
-function Forecast() {
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
-  const daysArray = days.map((day, index) => (
-    <div key={index} className={styles.day}>
-      <Image
-        alt={day}
-        src="http://openweathermap.org/img/wn/01n@4x.png"
-        width={150}
-        height={150}
-      />
-      <p> {day}</p>
-      <p> 20°</p>
-    </div>
+function Forecast({ weather }) {
+  console.log(weather);
+  const Day = styled.div`
+    border-radius: 20px;
+    background: ${props => props.bg};
+    /* background-image: ${props => props.bgImg}; */
+    color: black;
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+  `;
+
+  const daysArray = weather.forecast.map((day, index) => (
+    <Day bg={day.bg.bg} bgImg={day.bgImg} key={index} className={styles.day}>
+      <Image alt={day.day} src={day.iconUrl} width={150} height={150} />
+      <p> {day.name}</p>
+      <p> {day.temp} °</p>
+    </Day>
   ));
 
   return <div className={styles.forecast}>{daysArray}</div>;

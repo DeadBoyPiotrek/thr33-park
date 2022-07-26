@@ -4,11 +4,19 @@
   display: flex;
   gap: 2rem;
 }
-.day {
-  border-radius: 20px;
-  background: rgb(243, 243, 255);
-  color: $black;
-  flex: 1;
-  text-align: center;
-  font-size: 1.5rem;
+
+.dog {
+  font-size: 0.41rem;
+}
+
+.tenDegree {
+  background: blue;
+}
+
+.twentyDegree {
+  background: green;
+}
+
+.thirtyDegree {
+  background: yellow;
 }

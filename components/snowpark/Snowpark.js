@@ -15,7 +15,7 @@ function Snowpark({ weather }) {
       </section>
       <section className={styles.section}>
         <h2>Zaplanuj wyjazd</h2>
-        <Forecast />
+        <Forecast weather={weather} />
       </section>
     </div>
   );
