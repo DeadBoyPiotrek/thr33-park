@@ -2,6 +2,7 @@ import Map from '../../components/snowpark/Map';
 import Conditions from './Conditions';
 import Forecast from './Forecast';
 import styles from './snowpark.module.scss';
+
 function Snowpark({ weather }) {
   return (
     <div className={styles.main}>

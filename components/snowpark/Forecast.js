@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import styles from './forecast.module.scss';
 function Forecast({ weather }) {
-  console.log(weather);
+  // console.log(weather);
   const Day = styled.div`
     border-radius: 20px;
     background: ${props => props.bg};

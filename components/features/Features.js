@@ -10,7 +10,7 @@ function Features({ features }) {
       </a>
     </Link>
   ));
-  console.log(featuresArr);
+  // console.log(featuresArr);
   return <div className={styles.features}>{featuresArr}</div>;
 }
 

@@ -16,7 +16,6 @@ const SnowparkPage = ({ weather }) => {
   return (
     <>
       <main className={styles.wrapper}>
-        {/* <pre>{JSON.stringify(weather, null, 2)}</pre> */}
         <Snowpark weather={weather} />
       </main>
     </>
