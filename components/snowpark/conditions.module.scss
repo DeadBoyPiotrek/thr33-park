@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../../styles/common.scss';
 
 .main {
   width: 80%;
@@ -15,6 +15,7 @@
   background-color: #0093e9;
   background-image: linear-gradient(160deg, #036ba7 0%, #73adbb 100%);
   display: flex;
+
   align-items: center;
   justify-content: space-evenly;
   width: 80%;
@@ -22,11 +23,13 @@
   padding: 30px;
 
   &__icon {
-    font-size: 2rem;
-    font-weight: 300;
+    width: (100%/3);
+    text-align: center;
   }
 
   &__temperature {
+    width: (100%/3);
+    text-align: center;
     font-size: 10rem;
     font-weight: 300;
   }
@@ -35,12 +38,87 @@
   }
 
   &__location {
+    width: (100%/3);
     text-align: center;
     font-size: 2rem;
     &__city {
       margin-bottom: 30px;
       &__time {
         padding: 5px;
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    &__temperature {
+      font-size: 8rem;
+      font-weight: 300;
+    }
+    &__degree {
+      font-size: 4rem;
+    }
+
+    &__location {
+      text-align: center;
+      font-size: 1.5rem;
+      &__city {
+        margin-bottom: 30px;
+        &__time {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  @include small-screens-media-query {
+    &__icon {
+      img {
+        width: 10%;
+      }
+    }
+    &__temperature {
+      font-size: 4rem;
+      font-weight: 300;
+    }
+    &__degree {
+      font-size: 4rem;
+    }
+
+    &__location {
+      text-align: center;
+      font-size: 1.3rem;
+      &__city {
+        margin-bottom: 30px;
+        &__time {
+          padding: 5px;
+        }
+      }
+    }
+  }
+  @include tablet-media-query {
+    flex-direction: column;
+
+    &__icon {
+      width: (100%);
+    }
+    &__temperature {
+      width: (100%);
+      font-size: 4rem;
+      font-weight: 300;
+    }
+    &__degree {
+      font-size: 4rem;
+    }
+
+    &__location {
+      width: (100%);
+      text-align: center;
+      font-size: 1.3rem;
+      &__city {
+        margin-bottom: 30px;
+        &__time {
+          padding: 5px;
+        }
       }
     }
   }

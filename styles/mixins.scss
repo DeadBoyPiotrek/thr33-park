@@ -1,15 +1,17 @@
-@mixin phone-media-query {
-  @media (max-width: 480px) {
+@mixin small-screens-media-query {
+  @media (max-width: 1024px) {
     @content;
   }
 }
+
 @mixin tablet-media-query {
   @media (max-width: 768px) {
     @content;
   }
 }
-@mixin small-screens-media-query {
-  @media (max-width: 1024px) {
+
+@mixin phone-media-query {
+  @media (max-width: 480px) {
     @content;
   }
 }
