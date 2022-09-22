@@ -7,6 +7,9 @@ const nextConfig = {
     // config.experiments = { topLevelAwait: true };
     return config;
   },
+  compiler: {
+    styledComponents: true,
+  },
   images: {
     domains: ['openweathermap.org'],
   },
