@@ -18,4 +18,4 @@
 
 ###### scss
 
-[live demo](https://thr33-park-1aem-5rhaxtlrd-deadboypiotrek.vercel.app/snowpark)
+[live demo](https://thr33-park-1aem.vercel.app/snowpark)
