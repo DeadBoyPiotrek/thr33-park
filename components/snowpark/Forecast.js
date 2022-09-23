@@ -10,6 +10,7 @@ const ForecastDiv = styled.div`
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
   //media small screen
   @media (max-width: 1024px) {
   }
@@ -35,11 +36,7 @@ const Day = styled.div`
   text-align: center;
   font-size: 1.5rem;
   padding: 10px;
-  flex: 1 1 33.33333%;
-  white-space: nowrap;
-  max-width: 50%;
-  flex-grow: 1;
-  flex-basis: 0;
+
   //media small screen
   @media (max-width: 1024px) {
     font-size: 1rem;
