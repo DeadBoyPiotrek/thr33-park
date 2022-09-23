@@ -8,7 +8,7 @@ export const getStaticProps = async () => {
     props: {
       weather,
     },
-    revalidate: 5,
+    revalidate: 60,
   };
 };
 
