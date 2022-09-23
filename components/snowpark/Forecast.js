@@ -3,35 +3,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 // import styles from './forecast.module.scss';
-const Day = styled.div`
-  border-radius: 20px;
-  background: ${props => props.bg};
-  background-image: ${props => props.bgImg};
-  color: black;
-  flex: 1;
-  text-align: center;
-  font-size: 1.5rem;
-  //media small screen
-  @media (max-width: 1024px) {
-    font-size: 1rem;
-  }
-  //media tablet
-  @media (max-width: 768px) {
-    font-size: 0.7rem;
-  }
-  //media phone
-  @media (max-width: 480px) {
-  }
-`;
 
 const ForecastDiv = styled.div`
+  align-items: stretch;
   width: 80%;
   display: flex;
   gap: 2rem;
-
+  flex-wrap: wrap;
   //media small screen
   @media (max-width: 1024px) {
-    @content;
   }
   //media tablet
   @media (max-width: 768px) {
@@ -45,6 +25,31 @@ const ForecastDiv = styled.div`
   @media (max-width: 330px) {
     width: 100%;
     flex-wrap: wrap;
+  }
+`;
+const Day = styled.div`
+  border-radius: 20px;
+  background: ${props => props.bg};
+  background-image: ${props => props.bgImg};
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  flex: 1 1 33.33333%;
+  white-space: nowrap;
+  max-width: 50%;
+  flex-grow: 1;
+  flex-basis: 0;
+  //media small screen
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
+  //media tablet
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
+  //media phone
+  @media (max-width: 480px) {
   }
 `;
 function Forecast({ weather }) {
