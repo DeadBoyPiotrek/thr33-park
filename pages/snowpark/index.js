@@ -1,14 +1,13 @@
 import Snowpark from '../../components/snowpark/Snowpark';
 import { getWeatherAndForecast } from '../../lib/weatherFunctions';
 import styles from './snowparkPage.module.scss';
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const weather = await getWeatherAndForecast();
 
   return {
     props: {
       weather,
     },
-    revalidate: 60,
   };
 };
 
