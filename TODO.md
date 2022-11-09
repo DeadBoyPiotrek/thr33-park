@@ -1,0 +1,2 @@
+- add heads to pages
+- adjust accessibility
